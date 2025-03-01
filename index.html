@@ -11,25 +11,28 @@
 
 <body class="container mt-5">
     <h4 class="text-center m-4">Calcola il prezzo del tuo biglietto</h4>
-    <form class="row g">
-        <div class="col-md-5">
-          <label for="inputnomeecognome" class="form-label">Nome e Cognome</label>
-          <input type="email" class="form-control" id="inputnomeecognome">
+    <form class="card p-4">
+        <div class="row g-4">
+            <div class="col-md-5">
+                <label for="inputnomeecognome" class="form-label">Nome e Cognome</label>
+                <input type="email" class="form-control" id="inputnomeecognome">
+            </div>
+            <div class="col-md-3">
+                <label for="inputeta" class="form-label">eta</label>
+                <input type="password" class="form-control" id="inputeta">
+            </div>
+            <div class="col-4">
+                <label for="inputkmdapercorrere" class="form-label">Km da percorre </label>
+                <input type="text" class="form-control" id="inputkmdapercorrere">
+            </div>
+            <div> <button class="btn btn-primary mt-3">Calcola</button></div>
         </div>
-        <div class="col-md-3">
-          <label for="inputeta" class="form-label">eta</label>
-          <input type="password" class="form-control" id="inputeta">
-        </div>
-        <div class="col-4">
-          <label for="inputkmdapercorrere" class="form-label">Km da percorre </label>
-          <input type="text" class="form-control" id="inputkmdapercorrere" >
-        </div>
-       <div> <button  class="btn btn-primary mt-3">Calcola</button></div>
     </form>
-    <div>
-        <h3 class="text-center mt-4"> Prezzo Finale</h3>
+    <div class="mt-4" >
+        <h3 class="text-center mt-4">Dettaglio biglietto</h3>
+        <p><strong>Prezzo Finale:</strong> <span> </span> €</p>
     </div>
-   
+
 
 </body>
 <script src="./js/script.js"></script>
