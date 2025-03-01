@@ -9,37 +9,22 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body class="container mt-4">
+<body class="container mt-5">
     <h4 class="text-center m-4">Calcola il prezzo del tuo biglietto</h4>
-    <form class="card p-4">
-        <div class="row ">
-            <div class="col-auto">
-                <label for="inputnomeecognome" class="col-form-label">Nome e Cognome</label>
-            </div>
-            <div class="col">
-                <input type="nomeecognome" id="inputnomeecognome" class="form-control" aria-describedby="nomeecognome">
-            </div>
-            <div class="col">
-                <span id="passwordHelpInline" class="form-text">
-                    <div class="col">
-                        <label for="inputdistanzadapercorrere" class="col-form-label">Distanza da percorrere </label>
-                    </div>
-                    <div class="col">
-                        <input type="distanzadapercorrere" id="inputdistanzadapercorrere" class="form-control"
-                            aria-describedby="distanzadapercorrere">
-                    </div>
-
-                    <div class="col">
-                        <label for="inputPassword6" class="col-form-label">eta</label>
-                    </div>
-                    <div class="col">
-                        <input type="password" id="inputeta" class="form-control" aria-describedby="eta">
-                    </div>
-                    <button class="btn btn-primary">Calcola il prezzo</button>
-                </span>
-            </div>
-        </div>           
-
+    <form class="row g">
+        <div class="col-md-5">
+          <label for="inputnomeecognome" class="form-label">Nome e Cognome</label>
+          <input type="email" class="form-control" id="inputnomeecognome">
+        </div>
+        <div class="col-md-3">
+          <label for="inputeta" class="form-label">eta</label>
+          <input type="password" class="form-control" id="inputeta">
+        </div>
+        <div class="col-4">
+          <label for="inputkmdapercorrere" class="form-label">Km da percorre </label>
+          <input type="text" class="form-control" id="inputkmdapercorrere" >
+        </div>
+       <div> <button  class="btn btn-primary mt-3">Calcola</button></div>
     </form>
     <div>
         <h3 class="text-center mt-4"> Prezzo Finale</h3>
