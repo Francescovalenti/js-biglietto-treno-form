@@ -19,7 +19,7 @@ const datiutenti = document.getElementById("datiutenti");
 
 
 document.getElementById("calcola")
-datiutenti.addEventListener(`Click`, function () {
+Button.addEventListener(`Click`, function () {
     ;
     console.log("datiutenti");
     // Prelevare i dati dagli inputs
