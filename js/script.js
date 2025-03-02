@@ -1,15 +1,21 @@
 const datiutenti = document.getElementById("datiutenti");
 console.log(datiutenti);
-const inputetastr = (document.getElementById("inputeta"));
-const inputkmstr = (document.getElementById("inputkm"));
-let km = parseInt(inputkmstr);
-let eta = parseInt(inputetastr);
-const prezzokm = 0.21;
-let prezzoTotale = inputkm * prezzokm;
-console.log(inputetastr, inputkmstr);
+const Inputeta = document.getElementById("inputeta");
+console.log(inputeta);
+const inputkm = document.getElementById("inputkm");
+console.log(inputkm);
+const risultatoElement = document.getElementById("risultato");
+console.log(risultatoElement);
+
+// let km = parseInt(inputkmstr);
+// let eta = parseInt(inputetastr);
+// const prezzokm = 0.21;
+// let prezzoTotale = inputkm * prezzokm;
+// console.log(inputetastr, inputkmstr);
 
 
-document.getElementById("calcola").addEventListener(`Click`, function () {
+document.getElementById("calcola")
+datiutenti.addEventListener(`Click`, function () {
     const inputeta = inputeta.Value;
     const inputkm = inputkm.value;
    
