@@ -11,26 +11,30 @@
 
 <body class="container mt-5">
     <h4 class="text-center m-4">Calcola il prezzo del tuo biglietto</h4>
-    <form class="card p-4" id="dati-utenti">
+    <form class="card p-4" id="datiutenti">
         <div class="row g-4">
             <div class="col-md-5">
                 <label for="inputnomeecognome" class="form-label">Nome e Cognome</label>
                 <input type="text" class="form-control" id="inputnomeecognome"   autocomplete="off">
             </div>
             <div class="col-md-3">
-                <label for="inputeta" class="form-label" id="eta">età</label>
+                <label for="inputeta" class="form-label" >età</label>
                 <input type="number" class="form-control" id="inputeta"   autocomplete="off">
             </div>
             <div class="col-4">
-                <label for="inputkmdapercorrere" class="form-label" id="km">Km da percorrere </label>
-                <input type="number" class="form-control" id="inputkmdapercorrere"   autocomplete="off">
+                <label for="inputkm" class="form-label" >Km da percorrere </label>
+                <input type="number" class="form-control" id="inputkm"   autocomplete="off">
             </div>
             <div> <button class="btn btn-primary mt-3" id="calcola">Calcola</button></div>
         </div>
     </form>
     <div class="mt-4" id="risultato" >
         <h3 class="text-center mt-4">Dettaglio biglietto</h3>
-        <p><strong>Prezzo Finale:</strong> <span id="prezzo"> </span> €</p>
+        
+        <div class="mt-4" id="risultato" style="display: none;">
+            
+            <p><strong>Prezzo finale:</strong> <span id="prezzo"></span> €</p>
+        </div>
     </div>
 
 
