@@ -1,29 +1,37 @@
 const datiutenti = document.getElementById("datiutenti");
 console.log(datiutenti);
-const Inputeta = document.getElementById("inputeta");
-console.log(inputeta);
-const inputkm = document.getElementById("inputkm");
-console.log(inputkm);
+const eta = document.getElementById("eta");
+console.log(eta);
+const inputkm = document.getElementById("km");
+console.log(km);
 const risultatoElement = document.getElementById("risultato");
 console.log(risultatoElement);
 
-// let km = parseInt(inputkmstr);
-// let eta = parseInt(inputetastr);
-// const prezzokm = 0.21;
-// let prezzoTotale = inputkm * prezzokm;
-// console.log(inputetastr, inputkmstr);
+
+
+
+
+const prezzokm = 0.21;
+let prezzoTotale = km * prezzokm;
+
+if (isNaN(km) || isNaN(eta) || km <= 0 || eta <= 0) {
+
+}
 
 
 document.getElementById("calcola")
 datiutenti.addEventListener(`Click`, function () {
-    const inputeta = inputeta.Value;
-    const inputkm = inputkm.value;
+    ;
+    console.log("datiutenti");
+    // Prelevare i dati dagli inputs
+    const eta = eta.value;
+    const km =  km.value;
+    console.log(eta,km);
+    
    
 
-    if (isNaN(km) || isNaN(age) || km <= 0 || age <= 0) {
-        alert("Per favore, inserisci valori validi per chilometri ed età.");
-        return;
-    }
+
+
 
 
 
@@ -35,14 +43,15 @@ datiutenti.addEventListener(`Click`, function () {
         prezzoTotale = prezzoTotale - sconto;
     }
     prezzoTotale =
-        (Math.round(prezzototale * 100) / 100).toFixed(2)
-    
+        (Math.round(prezzoTotale * 100) / 100).toFixed(2)
+        console.log(prezzoTotale);
+
 
     const risultato = document.getElementById('risultato');
-    document.getElementById("prezzo").innerText = prezzoTotale;
+    document.getElementById("prezzo").innerText = `<p>Il prezzo del biglietto è: ${prezzoTotale} €</p>`;
     document.getElementById("risultato").style.display = "block";
-    console.log(prezzoTotale);
-   
+    
+
 
 
 
