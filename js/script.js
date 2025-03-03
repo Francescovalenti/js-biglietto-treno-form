@@ -12,8 +12,9 @@ console.log(calcolainput);
 
 
 // processo di esecuzione
-datiutenti.addEventListener("click", function () {
-    console.log("Click");
+datiutenti.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("submit");
     const eta = (etainput.value);
     console.log(eta);
     const km = (kminput.value);
@@ -36,7 +37,7 @@ datiutenti.addEventListener("click", function () {
 (Math.round    (prezzoTotale * 100) / 100).toFixed(2);
 
 console.log(prezzoTotale);
-
+document.getElementById("prezzo").innerHTML=`${prezzoTotale}`;
 
 })
 
