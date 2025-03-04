@@ -18,11 +18,11 @@ console.log(calcolainput);
 datiutenti.addEventListener("submit", function (event) {
     event.preventDefault();
     console.log("submit");
-    const nomeecognome = (nomeecognomeinput.value);
+    const nomeecognome = nomeecognomeinput.value;
     console.log(nomeecognome);
-    const eta = (etainput.value);
+    const eta = etainput.value;
     console.log(eta);
-    const km = (kminput.value);
+    const km = kminput.value;
     console.log(km);
    
 
