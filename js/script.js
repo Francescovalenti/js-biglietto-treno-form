@@ -43,6 +43,7 @@ datiutenti.addEventListener("submit", function (event) {
         (Math.round(prezzoTotale * 100) / 100).toFixed(2);
 
     console.log(prezzoTotale);
+   
     document.getElementById("prezzo").innerHTML = `  il costo del biglietto per ${nomeecognome} è di ${prezzoTotale} € `;
 
 })
