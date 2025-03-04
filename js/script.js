@@ -20,15 +20,22 @@ datiutenti.addEventListener("submit", function (event) {
     console.log("submit");
     const nomeecognome = nomeecognomeinput.value;
     console.log(nomeecognome);
-    const eta = etainput.value;
+    const eta = parseInt (etainput.value);
     console.log(eta);
-    const km = kminput.value;
+    const km = parseFloat (kminput.value);
     console.log(km);
    
 
     const prezzobase = 0.21;
     let prezzoTotale = km * prezzobase;
 
+    if (isNaN ((eta) || (km)) ) {
+    
+    
+        alert  ("Non valido,ricarica la pagina e inserire il numero");
+        
+        
+    }
 
     if (eta < 18) {
         let sconto = prezzoTotale * 20 / 100;
